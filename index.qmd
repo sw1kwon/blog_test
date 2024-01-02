@@ -1,5 +1,5 @@
 ---
-title: "blog_test"
+title: "sw1kwon blog"
 listing:
   contents: posts
   sort: "date desc"
