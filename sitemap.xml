@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sw1kwon.github.io/blog_test/posts/test1.html</loc>
-    <lastmod>2024-01-03T08:01:10.390Z</lastmod>
+    <loc>https://sw1kwon.github.io/blog_test/posts/test2.html</loc>
+    <lastmod>2024-01-03T08:46:08.994Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sw1kwon.github.io/blog_test/about.html</loc>
+    <lastmod>2024-01-03T06:30:40.750Z</lastmod>
   </url>
   <url>
     <loc>https://sw1kwon.github.io/blog_test/index.html</loc>
     <lastmod>2024-01-03T06:30:40.750Z</lastmod>
   </url>
   <url>
-    <loc>https://sw1kwon.github.io/blog_test/about.html</loc>
-    <lastmod>2024-01-03T06:30:40.750Z</lastmod>
+    <loc>https://sw1kwon.github.io/blog_test/posts/test1.html</loc>
+    <lastmod>2024-01-03T08:47:52.954Z</lastmod>
   </url>
 </urlset>

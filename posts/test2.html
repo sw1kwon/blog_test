@@ -9,7 +9,7 @@
 <meta name="author" content="최규빈">
 <meta name="dcterms.date" content="2024-01-02">
 
-<title>sw1kwon blog - test1</title>
+<title>sw1kwon blog - test2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -115,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">test1</h1>
+      <h1 class="title">test2</h1>
                       </div>
   </div>
     
@@ -151,91 +151,51 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="python" class="level1">
-<h1>Python</h1>
-<section id="설치방법" class="level2">
-<h2 class="anchored" data-anchor-id="설치방법"><strong>설치방법</strong></h2>
+<section id="가상의-컴퓨터" class="level2">
+<h2 class="anchored" data-anchor-id="가상의-컴퓨터"><strong>가상의 컴퓨터</strong></h2>
 <ul>
-<li><p>파이썬 프로그램 다운로드 -&gt; 시작버튼 눌러서 설치</p></li>
-<li><p>아나콘다 설치 (그럼 자동으로 파이썬이 설치됨)</p></li>
-<li><p>아나콘다 설치 + 가상환경</p></li>
-<li><p>기타 등등</p></li>
+<li><p>컴퓨터라는 것은 어떤 폴더들의 모임</p></li>
+<li><p>가상의 컴퓨터 : 역시 폴더들의 모임</p></li>
 </ul>
 </section>
-<section id="실행방법" class="level2">
-<h2 class="anchored" data-anchor-id="실행방법"><strong>실행방법</strong></h2>
+<section id="아나콘다" class="level2">
+<h2 class="anchored" data-anchor-id="아나콘다"><strong>아나콘다</strong></h2>
 <ul>
-<li><p>파이썬 프롬프트</p></li>
-<li><p>.py를 이용하여 실행?</p></li>
-<li><p>IDLE</p></li>
-<li><p>파이참</p></li>
-<li><p>스파이더</p></li>
-<li><p>Visual Studio Code</p></li>
-<li><p>주피터노트북, 주피터랩 (가상환경 만들어서 하기, 아나콘다 네비게이터에 주피터가 있음)</p></li>
+<li><p>가상의 컴퓨터[가상환경]를 쉽게 만들어주는 프로그램</p></li>
+<li><p>아나콘다를 설치함과 동시에 가상환경이 하나 만들어짐(base)</p></li>
+<li><p>유저가 새로운 가상환경을 만들 수 있는 기능도 제공</p></li>
 </ul>
 </section>
-<section id="핵심" class="level2">
-<h2 class="anchored" data-anchor-id="핵심"><strong>핵심</strong></h2>
+<section id="r-설치" class="level1">
+<h1>R 설치</h1>
+<section id="윈도우에서-직접-설치" class="level2">
+<h2 class="anchored" data-anchor-id="윈도우에서-직접-설치"><strong>윈도우에서 직접 설치</strong></h2>
 <ul>
-<li><p>그냥 (1) 컴퓨터에 (2) 파이썬을 깔아서 (3) 실행하기</p></li>
-<li><p>공통 맥락이 존재하지만, 파이썬이 인기있고 다양한 방법들 각자의 장점이 존재함으로 설치&amp;실행 방법 다양</p></li>
+<li><p>프로그램파일즈에 설치됨</p></li>
+<li><p>버전은 4.1.1</p></li>
+<li><p>install.packages(“tidyverse”) : tidyverse라는 프로그램을 받아서 설치하라</p></li>
+<li><p>R의 프로그램들은 (1) 문서 &gt; R &gt; win-library &gt; 4.1 (2) C &gt; Program Files &gt; R &gt; R-4.1.1 &gt; library 에 있다.</p></li>
+<li><p>library(tidyverse) : tidyverse라는 프로그램을 더블클릭해서 실행하라</p></li>
 </ul>
 </section>
-<section id="세대-프로그래머" class="level2">
-<h2 class="anchored" data-anchor-id="세대-프로그래머"><strong>1세대 프로그래머</strong></h2>
+<section id="가상환경에-설치현재-3가지-환경-컨트롤-중" class="level2">
+<h2 class="anchored" data-anchor-id="가상환경에-설치현재-3가지-환경-컨트롤-중"><strong>가상환경에 설치(현재 3가지 환경 컨트롤 중)</strong></h2>
 <ul>
-<li><p>python</p></li>
-<li><p>ipython</p></li>
-<li><p>장점 : 자동으로 들여쓰기, 화살표를 이용해서 for문 작성 중 위아래 이동 가능</p></li>
-<li><p>단점 : 마우스로는 이동 불가능, 내가 작성한 코드 관리 어려움</p></li>
+<li><p>윈도우 : 4.1.1 설치 &gt; Rstudio (IDE)</p></li>
+<li><p>base</p></li>
+<li><p>ir2021 : 4.0.5 설치 &gt; Jupyterlab(IDE)</p></li>
+<li><p>가상환경의 R을 Rstudio로 연결 &gt; 가능 (리눅스에서)</p></li>
+<li><p>윈도우에 설치한 R을 JupyterLab으로 연결 &gt; 안해봐서 모르겠음</p></li>
 </ul>
 </section>
-<section id="세대-프로그래머-1" class="level2">
-<h2 class="anchored" data-anchor-id="세대-프로그래머-1"><strong>2세대 프로그래머</strong></h2>
+<section id="가상환경을-만드는-이유" class="level2">
+<h2 class="anchored" data-anchor-id="가상환경을-만드는-이유"><strong>가상환경을 만드는 이유</strong></h2>
 <ul>
-<li><p>메모장 + anaconda prompt를 이용 (.py를 이용한 python활용)</p></li>
-<li><p>장점 : 마우스를 이용하여 이동가능, 작업 내용이 바탕화면의 메모장에 저장됨</p></li>
-<li><p>단점 : ipython의 장점(구문강조, 도움말기능) 활용 못함</p></li>
-</ul>
-</section>
-<section id="세대-프로그래머-2" class="level2">
-<h2 class="anchored" data-anchor-id="세대-프로그래머-2"><strong>3세대 프로그래머</strong></h2>
-<ul>
-<li>메모장 + ipython</li>
-</ul>
-</section>
-<section id="세대-프로그래머-3" class="level2">
-<h2 class="anchored" data-anchor-id="세대-프로그래머-3"><strong>4세대 프로그래머</strong></h2>
-<ul>
-<li><p>IDE(통합개발환경)를 사용</p></li>
-<li><p>메모장 + ipython을 하나로 통합한 프로그램 (ex.jupyter notebook, jupyter lab, spyder, idle, VScode, …)</p></li>
-<li><p>IDE는 내부적으로 연산을 수행하는 능력이 없음 (기생)</p></li>
-<li><p>하나의 IDE가 여러개의 언어와 연결되어 있음</p></li>
-</ul>
-</section>
-<section id="세대-프로그래머-4" class="level2">
-<h2 class="anchored" data-anchor-id="세대-프로그래머-4"><strong>5세대 프로그래머</strong></h2>
-<ul>
-<li><p>가상컴퓨터(anaconda), 원격컴퓨터(server), 클라우드컴퓨터(colab)의 개념 등장</p></li>
-<li><p>원격컴퓨터</p></li>
-<li><p>원격컴퓨터 + 가상컴퓨터</p></li>
-<li><p>가상컴퓨터</p></li>
-<li><p>클라우드 (ex. 구글코랩)</p></li>
-</ul>
-</section>
-<section id="요약-및-정리" class="level2">
-<h2 class="anchored" data-anchor-id="요약-및-정리"><strong>요약 및 정리</strong></h2>
-<ul>
-<li><p>결국 (1) 컴퓨터에 (2) 파이썬을 설치하고 (3) 실행하는 과정은 생각보다 다양한 선택의 조합 가능</p></li>
-<li><ol type="1">
-<li>그냥 내 노트북에 파이썬 설치? 내 노트북에 가상컴퓨터 만들고 파이썬 설치? 학교 데스크탑에 파이썬 설치? 설치 안하고 구글 컴퓨터 설치된 파이썬 사용?</li>
-</ol></li>
-<li><ol start="2" type="1">
-<li>python 설치? ipython 설치? 가상환경을 사용하므로 anaconda 설치? 코랩을 사용하므로 설치 X?</li>
-</ol></li>
-<li><ol start="3" type="1">
-<li>어떤 IDE를 쓸지? IDE를 쓰지 않을지? 내가 IDE를 직접구성해서 만들지?</li>
-</ol></li>
+<li><p>충돌</p></li>
+<li><p>오픈소스 : 누구나 참여 가능, 누구나 본인이 만든 것을 배포 가능, 함수이름 등을 바꾸면 기존의 사용자는 충돌 가능성 발생</p></li>
+<li><p>해결방법 : 채널(비유. 여행사)들이 정리해 놓은 버전들을 사용하면 됨</p></li>
+<li><p>채널 : conda-forge, r, pytorch 등</p></li>
+<li><p>conda install -c conda-forge a의 의미 : conda-forge 채널(-c)에서 추천하는 방법으로 a(패키지)를 설치하겠다.</p></li>
 </ul>
 
 

@@ -1,24 +1,45 @@
 [
   {
-    "objectID": "posts/test1.html",
-    "href": "posts/test1.html",
-    "title": "my title",
+    "objectID": "posts/test2.html",
+    "href": "posts/test2.html",
+    "title": "test2",
     "section": "",
-    "text": "파이썬 프로그램 다운로드 -&gt; 시작버튼 눌러서 설치\n아나콘다 설치 (그럼 자동으로 파이썬이 설치됨)\n아나콘다 설치 + 가상환경\n기타 등등"
+    "text": "컴퓨터라는 것은 어떤 폴더들의 모임\n가상의 컴퓨터 : 역시 폴더들의 모임"
   },
   {
-    "objectID": "posts/test1.html#설치방법",
-    "href": "posts/test1.html#설치방법",
-    "title": "my title",
+    "objectID": "posts/test2.html#가상의-컴퓨터",
+    "href": "posts/test2.html#가상의-컴퓨터",
+    "title": "test2",
     "section": "",
-    "text": "파이썬 프로그램 다운로드 -&gt; 시작버튼 눌러서 설치\n아나콘다 설치 (그럼 자동으로 파이썬이 설치됨)\n아나콘다 설치 + 가상환경\n기타 등등"
+    "text": "컴퓨터라는 것은 어떤 폴더들의 모임\n가상의 컴퓨터 : 역시 폴더들의 모임"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "sw1kwon blog",
-    "section": "",
-    "text": "my title\n\n\n\n\n\n\n\n\n\n\n\nJan 2, 2024\n\n\n최규빈\n\n\n\n\n\n\nNo matching items"
+    "objectID": "posts/test2.html#아나콘다",
+    "href": "posts/test2.html#아나콘다",
+    "title": "test2",
+    "section": "아나콘다",
+    "text": "아나콘다\n\n가상의 컴퓨터[가상환경]를 쉽게 만들어주는 프로그램\n아나콘다를 설치함과 동시에 가상환경이 하나 만들어짐(base)\n유저가 새로운 가상환경을 만들 수 있는 기능도 제공"
+  },
+  {
+    "objectID": "posts/test2.html#윈도우에서-직접-설치",
+    "href": "posts/test2.html#윈도우에서-직접-설치",
+    "title": "test2",
+    "section": "윈도우에서 직접 설치",
+    "text": "윈도우에서 직접 설치\n\n프로그램파일즈에 설치됨\n버전은 4.1.1\ninstall.packages(“tidyverse”) : tidyverse라는 프로그램을 받아서 설치하라\nR의 프로그램들은 (1) 문서 &gt; R &gt; win-library &gt; 4.1 (2) C &gt; Program Files &gt; R &gt; R-4.1.1 &gt; library 에 있다.\nlibrary(tidyverse) : tidyverse라는 프로그램을 더블클릭해서 실행하라"
+  },
+  {
+    "objectID": "posts/test2.html#가상환경에-설치현재-3가지-환경-컨트롤-중",
+    "href": "posts/test2.html#가상환경에-설치현재-3가지-환경-컨트롤-중",
+    "title": "test2",
+    "section": "가상환경에 설치(현재 3가지 환경 컨트롤 중)",
+    "text": "가상환경에 설치(현재 3가지 환경 컨트롤 중)\n\n윈도우 : 4.1.1 설치 &gt; Rstudio (IDE)\nbase\nir2021 : 4.0.5 설치 &gt; Jupyterlab(IDE)\n가상환경의 R을 Rstudio로 연결 &gt; 가능 (리눅스에서)\n윈도우에 설치한 R을 JupyterLab으로 연결 &gt; 안해봐서 모르겠음"
+  },
+  {
+    "objectID": "posts/test2.html#가상환경을-만드는-이유",
+    "href": "posts/test2.html#가상환경을-만드는-이유",
+    "title": "test2",
+    "section": "가상환경을 만드는 이유",
+    "text": "가상환경을 만드는 이유\n\n충돌\n오픈소스 : 누구나 참여 가능, 누구나 본인이 만든 것을 배포 가능, 함수이름 등을 바꾸면 기존의 사용자는 충돌 가능성 발생\n해결방법 : 채널(비유. 여행사)들이 정리해 놓은 버전들을 사용하면 됨\n채널 : conda-forge, r, pytorch 등\nconda install -c conda-forge a의 의미 : conda-forge 채널(-c)에서 추천하는 방법으로 a(패키지)를 설치하겠다."
   },
   {
     "objectID": "about.html",
@@ -26,5 +47,82 @@
     "title": "About",
     "section": "",
     "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "sw1kwon blog",
+    "section": "",
+    "text": "my title\n\n\n\n\n\n\n\n\n\n\n\nJan 2, 2024\n\n\n최규빈\n\n\n\n\n\n\n\n\n\n\n\n\ntest2\n\n\n\n\n\n\n\n\n\n\n\nJan 2, 2024\n\n\n최규빈\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/test1.html",
+    "href": "posts/test1.html",
+    "title": "test1",
+    "section": "",
+    "text": "파이썬 프로그램 다운로드 -&gt; 시작버튼 눌러서 설치\n아나콘다 설치 (그럼 자동으로 파이썬이 설치됨)\n아나콘다 설치 + 가상환경\n기타 등등\n\n\n\n\n\n파이썬 프롬프트\n.py를 이용하여 실행?\nIDLE\n파이참\n스파이더\nVisual Studio Code\n주피터노트북, 주피터랩 (가상환경 만들어서 하기, 아나콘다 네비게이터에 주피터가 있음)\n\n\n\n\n\n그냥 (1) 컴퓨터에 (2) 파이썬을 깔아서 (3) 실행하기\n공통 맥락이 존재하지만, 파이썬이 인기있고 다양한 방법들 각자의 장점이 존재함으로 설치&실행 방법 다양\n\n\n\n\n\npython\nipython\n장점 : 자동으로 들여쓰기, 화살표를 이용해서 for문 작성 중 위아래 이동 가능\n단점 : 마우스로는 이동 불가능, 내가 작성한 코드 관리 어려움\n\n\n\n\n\n메모장 + anaconda prompt를 이용 (.py를 이용한 python활용)\n장점 : 마우스를 이용하여 이동가능, 작업 내용이 바탕화면의 메모장에 저장됨\n단점 : ipython의 장점(구문강조, 도움말기능) 활용 못함\n\n\n\n\n\n메모장 + ipython\n\n\n\n\n\nIDE(통합개발환경)를 사용\n메모장 + ipython을 하나로 통합한 프로그램 (ex.jupyter notebook, jupyter lab, spyder, idle, VScode, …)\nIDE는 내부적으로 연산을 수행하는 능력이 없음 (기생)\n하나의 IDE가 여러개의 언어와 연결되어 있음\n\n\n\n\n\n가상컴퓨터(anaconda), 원격컴퓨터(server), 클라우드컴퓨터(colab)의 개념 등장\n원격컴퓨터\n원격컴퓨터 + 가상컴퓨터\n가상컴퓨터\n클라우드 (ex. 구글코랩)\n\n\n\n\n\n결국 (1) 컴퓨터에 (2) 파이썬을 설치하고 (3) 실행하는 과정은 생각보다 다양한 선택의 조합 가능\n\n그냥 내 노트북에 파이썬 설치? 내 노트북에 가상컴퓨터 만들고 파이썬 설치? 학교 데스크탑에 파이썬 설치? 설치 안하고 구글 컴퓨터 설치된 파이썬 사용?\n\n\npython 설치? ipython 설치? 가상환경을 사용하므로 anaconda 설치? 코랩을 사용하므로 설치 X?\n\n\n어떤 IDE를 쓸지? IDE를 쓰지 않을지? 내가 IDE를 직접구성해서 만들지?"
+  },
+  {
+    "objectID": "posts/test1.html#설치방법",
+    "href": "posts/test1.html#설치방법",
+    "title": "test1",
+    "section": "",
+    "text": "파이썬 프로그램 다운로드 -&gt; 시작버튼 눌러서 설치\n아나콘다 설치 (그럼 자동으로 파이썬이 설치됨)\n아나콘다 설치 + 가상환경\n기타 등등"
+  },
+  {
+    "objectID": "posts/test1.html#실행방법",
+    "href": "posts/test1.html#실행방법",
+    "title": "test1",
+    "section": "",
+    "text": "파이썬 프롬프트\n.py를 이용하여 실행?\nIDLE\n파이참\n스파이더\nVisual Studio Code\n주피터노트북, 주피터랩 (가상환경 만들어서 하기, 아나콘다 네비게이터에 주피터가 있음)"
+  },
+  {
+    "objectID": "posts/test1.html#핵심",
+    "href": "posts/test1.html#핵심",
+    "title": "test1",
+    "section": "",
+    "text": "그냥 (1) 컴퓨터에 (2) 파이썬을 깔아서 (3) 실행하기\n공통 맥락이 존재하지만, 파이썬이 인기있고 다양한 방법들 각자의 장점이 존재함으로 설치&실행 방법 다양"
+  },
+  {
+    "objectID": "posts/test1.html#세대-프로그래머",
+    "href": "posts/test1.html#세대-프로그래머",
+    "title": "test1",
+    "section": "",
+    "text": "python\nipython\n장점 : 자동으로 들여쓰기, 화살표를 이용해서 for문 작성 중 위아래 이동 가능\n단점 : 마우스로는 이동 불가능, 내가 작성한 코드 관리 어려움"
+  },
+  {
+    "objectID": "posts/test1.html#세대-프로그래머-1",
+    "href": "posts/test1.html#세대-프로그래머-1",
+    "title": "test1",
+    "section": "",
+    "text": "메모장 + anaconda prompt를 이용 (.py를 이용한 python활용)\n장점 : 마우스를 이용하여 이동가능, 작업 내용이 바탕화면의 메모장에 저장됨\n단점 : ipython의 장점(구문강조, 도움말기능) 활용 못함"
+  },
+  {
+    "objectID": "posts/test1.html#세대-프로그래머-2",
+    "href": "posts/test1.html#세대-프로그래머-2",
+    "title": "test1",
+    "section": "",
+    "text": "메모장 + ipython"
+  },
+  {
+    "objectID": "posts/test1.html#세대-프로그래머-3",
+    "href": "posts/test1.html#세대-프로그래머-3",
+    "title": "test1",
+    "section": "",
+    "text": "IDE(통합개발환경)를 사용\n메모장 + ipython을 하나로 통합한 프로그램 (ex.jupyter notebook, jupyter lab, spyder, idle, VScode, …)\nIDE는 내부적으로 연산을 수행하는 능력이 없음 (기생)\n하나의 IDE가 여러개의 언어와 연결되어 있음"
+  },
+  {
+    "objectID": "posts/test1.html#세대-프로그래머-4",
+    "href": "posts/test1.html#세대-프로그래머-4",
+    "title": "test1",
+    "section": "",
+    "text": "가상컴퓨터(anaconda), 원격컴퓨터(server), 클라우드컴퓨터(colab)의 개념 등장\n원격컴퓨터\n원격컴퓨터 + 가상컴퓨터\n가상컴퓨터\n클라우드 (ex. 구글코랩)"
+  },
+  {
+    "objectID": "posts/test1.html#요약-및-정리",
+    "href": "posts/test1.html#요약-및-정리",
+    "title": "test1",
+    "section": "",
+    "text": "결국 (1) 컴퓨터에 (2) 파이썬을 설치하고 (3) 실행하는 과정은 생각보다 다양한 선택의 조합 가능\n\n그냥 내 노트북에 파이썬 설치? 내 노트북에 가상컴퓨터 만들고 파이썬 설치? 학교 데스크탑에 파이썬 설치? 설치 안하고 구글 컴퓨터 설치된 파이썬 사용?\n\n\npython 설치? ipython 설치? 가상환경을 사용하므로 anaconda 설치? 코랩을 사용하므로 설치 X?\n\n\n어떤 IDE를 쓸지? IDE를 쓰지 않을지? 내가 IDE를 직접구성해서 만들지?"
   }
 ]
