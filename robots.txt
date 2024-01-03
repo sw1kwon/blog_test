@@ -1,1 +1,1 @@
-Sitemap: https://github.com/sw1kwon/blog_test/sitemap.xml
+Sitemap: https://sw1kwon.github.io/blog_test/sitemap.xml
