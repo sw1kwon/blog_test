@@ -4,7 +4,14 @@
     "href": "posts/test1.html",
     "title": "my title",
     "section": "",
-    "text": "Python # 설치방법 - 파이썬 프로그램 다운로드 -&gt; 시작버튼 눌러서 설치 - 아나콘다 설치 (그럼 자동으로 파이썬이 설치됨) - 아나콘다 설치 + 가상환경 - 기타 등등"
+    "text": "파이썬 프로그램 다운로드 -&gt; 시작버튼 눌러서 설치\n아나콘다 설치 (그럼 자동으로 파이썬이 설치됨)\n아나콘다 설치 + 가상환경\n기타 등등"
+  },
+  {
+    "objectID": "posts/test1.html#설치방법",
+    "href": "posts/test1.html#설치방법",
+    "title": "my title",
+    "section": "",
+    "text": "파이썬 프로그램 다운로드 -&gt; 시작버튼 눌러서 설치\n아나콘다 설치 (그럼 자동으로 파이썬이 설치됨)\n아나콘다 설치 + 가상환경\n기타 등등"
   },
   {
     "objectID": "index.html",
