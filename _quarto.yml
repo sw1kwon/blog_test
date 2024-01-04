@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "blog_test"
+  title: "sw1kwon blog"
   navbar:
     right:
       - about.qmd

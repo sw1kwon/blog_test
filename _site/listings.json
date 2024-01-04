@@ -1,9 +1,13 @@
 [
   {
     "listing": "/index.html",
+<<<<<<< HEAD
     "items": [
       "/posts/post-with-code/index.html",
       "/posts/welcome/index.html"
     ]
+=======
+    "items": []
+>>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
   }
 ]

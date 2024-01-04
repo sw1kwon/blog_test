@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Blog",
@@ -14,6 +15,8 @@
     "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 2, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nDec 30, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
+=======
+>>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -21,10 +24,18 @@
     "text": "About this blog"
   },
   {
+<<<<<<< HEAD
     "objectID": "posts/post-with-code/index.html",
     "href": "posts/post-with-code/index.html",
     "title": "Post With Code",
     "section": "",
     "text": "This is a post with executable code."
+=======
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "blog_test",
+    "section": "",
+    "text": "No matching items"
+>>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
   }
 ]
