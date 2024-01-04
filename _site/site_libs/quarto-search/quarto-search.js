@@ -43,11 +43,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
   const mainEl = window.document.querySelector("main");
 
   // highlight matches on the page
-<<<<<<< HEAD
-  if (query && mainEl) {
-=======
   if (query !== null && mainEl) {
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
     // perform any highlighting
     highlight(escapeRegExp(query), mainEl);
 
@@ -61,11 +57,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
   // (e.g. if the user edits the query or clears it)
   let highlighting = true;
   const resetHighlighting = (searchTerm) => {
-<<<<<<< HEAD
-    if (mainEl && highlighting && query && searchTerm !== query) {
-=======
     if (mainEl && highlighting && query !== null && searchTerm !== query) {
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
       clearHighlight(query, mainEl);
       highlighting = false;
     }
@@ -106,10 +98,6 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
     classNames: {
       form: "d-flex",
     },
-<<<<<<< HEAD
-    placeholder: language["search-text-placeholder"],
-=======
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
     translations: {
       clearButtonTitle: language["search-clear-button-title"],
       detachedCancelButtonText: language["search-detached-cancel-button-title"],
@@ -122,11 +110,6 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
       return item.href;
     },
     onStateChange({ state }) {
-<<<<<<< HEAD
-      // If this is a file URL, note that
-
-=======
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
       // Perhaps reset highlighting
       resetHighlighting(state.query);
 
@@ -376,12 +359,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
                 state,
                 setActiveItemId,
                 setContext,
-<<<<<<< HEAD
-                refresh,
-                quartoSearchOptions
-=======
                 refresh
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
               );
             },
           },
@@ -396,35 +374,6 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
     focusSearchInput();
   };
 
-<<<<<<< HEAD
-  document.addEventListener("keyup", (event) => {
-    const { key } = event;
-    const kbds = quartoSearchOptions["keyboard-shortcut"];
-    const focusedEl = document.activeElement;
-
-    const isFormElFocused = [
-      "input",
-      "select",
-      "textarea",
-      "button",
-      "option",
-    ].find((tag) => {
-      return focusedEl.tagName.toLowerCase() === tag;
-    });
-
-    if (
-      kbds &&
-      kbds.includes(key) &&
-      !isFormElFocused &&
-      !document.activeElement.isContentEditable
-    ) {
-      event.preventDefault();
-      window.quartoOpenSearch();
-    }
-  });
-
-=======
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
   // Remove the labeleledby attribute since it is pointing
   // to a non-existent label
   if (quartoSearchOptions.type === "overlay") {
@@ -436,38 +385,11 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
     }
   }
 
-<<<<<<< HEAD
-  function throttle(func, wait) {
-    let waiting = false;
-    return function () {
-      if (!waiting) {
-        func.apply(this, arguments);
-        waiting = true;
-        setTimeout(function () {
-          waiting = false;
-        }, wait);
-      }
-    };
-  }
-
-  // If the main document scrolls dismiss the search results
-  // (otherwise, since they're floating in the document they can scroll with the document)
-  window.document.body.onscroll = throttle(() => {
-    // Only do this if we're not detached
-    // Bug #7117
-    // This will happen when the keyboard is shown on ios (resulting in a scroll)
-    // which then closed the search UI
-    if (!window.matchMedia(detachedMediaQuery).matches) {
-      setIsOpen(false);
-    }
-  }, 50);
-=======
   // If the main document scrolls dismiss the search results
   // (otherwise, since they're floating in the document they can scroll with the document)
   window.document.body.onscroll = () => {
     setIsOpen(false);
   };
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
 
   if (showSearchResults) {
     setIsOpen(true);
@@ -507,29 +429,6 @@ function configurePlugins(quartoSearchOptions) {
         const algoliaInsightsPlugin = createAlgoliaInsightsPlugin({
           insightsClient: window.aa,
           onItemsChange({ insights, insightsEvents }) {
-<<<<<<< HEAD
-            const events = insightsEvents.flatMap((event) => {
-              // This API limits the number of items per event to 20
-              const chunkSize = 20;
-              const itemChunks = [];
-              const eventItems = event.items;
-              for (let i = 0; i < eventItems.length; i += chunkSize) {
-                itemChunks.push(eventItems.slice(i, i + chunkSize));
-              }
-              // Split the items into multiple events that can be sent
-              const events = itemChunks.map((items) => {
-                return {
-                  ...event,
-                  items,
-                };
-              });
-              return events;
-            });
-
-            for (const event of events) {
-              insights.viewedObjectIDs(event);
-            }
-=======
             const events = insightsEvents.map((event) => {
               const maxEvents = event.objectIDs.slice(0, 20);
               return {
@@ -539,7 +438,6 @@ function configurePlugins(quartoSearchOptions) {
             });
 
             insights.viewedObjectIDs(...events);
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
           },
         });
         return algoliaInsightsPlugin;
@@ -715,23 +613,9 @@ function showCopyLink(query, options) {
 /* Search Index Handling */
 // create the index
 var fuseIndex = undefined;
-<<<<<<< HEAD
-var shownWarning = false;
 async function readSearchData() {
   // Initialize the search index on demand
   if (fuseIndex === undefined) {
-    if (window.location.protocol === "file:" && !shownWarning) {
-      window.alert(
-        "Search requires JavaScript features disabled when running in file://... URLs. In order to use search, please run this document in a web server."
-      );
-      shownWarning = true;
-      return;
-    }
-=======
-async function readSearchData() {
-  // Initialize the search index on demand
-  if (fuseIndex === undefined) {
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
     // create fuse index
     const options = {
       keys: [
@@ -762,10 +646,6 @@ async function readSearchData() {
       );
     }
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
   return fuseIndex;
 }
 
@@ -794,12 +674,7 @@ function renderItem(
   state,
   setActiveItemId,
   setContext,
-<<<<<<< HEAD
-  refresh,
-  quartoSearchOptions
-=======
   refresh
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
 ) {
   switch (item.type) {
     case kItemTypeDoc:
@@ -809,13 +684,7 @@ function renderItem(
         item.title,
         item.section,
         item.text,
-<<<<<<< HEAD
-        item.href,
-        item.crumbs,
-        quartoSearchOptions
-=======
         item.href
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
       );
     case kItemTypeMore:
       return createMoreCard(
@@ -840,57 +709,15 @@ function renderItem(
   }
 }
 
-<<<<<<< HEAD
-function createDocumentCard(
-  createElement,
-  icon,
-  title,
-  section,
-  text,
-  href,
-  crumbs,
-  quartoSearchOptions
-) {
-=======
 function createDocumentCard(createElement, icon, title, section, text, href) {
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
   const iconEl = createElement("i", {
     class: `bi bi-${icon} search-result-icon`,
   });
   const titleEl = createElement("p", { class: "search-result-title" }, title);
-<<<<<<< HEAD
-  const titleContents = [iconEl, titleEl];
-  const showParent = quartoSearchOptions["show-item-context"];
-  if (crumbs && showParent) {
-    let crumbsOut = undefined;
-    const crumbClz = ["search-result-crumbs"];
-    if (showParent === "root") {
-      crumbsOut = crumbs.length > 1 ? crumbs[0] : undefined;
-    } else if (showParent === "parent") {
-      crumbsOut = crumbs.length > 1 ? crumbs[crumbs.length - 2] : undefined;
-    } else {
-      crumbsOut = crumbs.length > 1 ? crumbs.join(" > ") : undefined;
-      crumbClz.push("search-result-crumbs-wrap");
-    }
-
-    const crumbEl = createElement(
-      "p",
-      { class: crumbClz.join(" ") },
-      crumbsOut
-    );
-    titleContents.push(crumbEl);
-  }
-
-  const titleContainerEl = createElement(
-    "div",
-    { class: "search-result-title-container" },
-    titleContents
-=======
   const titleContainerEl = createElement(
     "div",
     { class: "search-result-title-container" },
     [iconEl, titleEl]
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
   );
 
   const textEls = [];
@@ -1272,21 +1099,6 @@ function algoliaSearch(query, limit, algoliaOptions) {
         const remappedHits = response.hits.map((hit) => {
           return hit.map((item) => {
             const newItem = { ...item };
-<<<<<<< HEAD
-            ["href", "section", "title", "text", "crumbs"].forEach(
-              (keyName) => {
-                const mappedName = indexFields[keyName];
-                if (
-                  mappedName &&
-                  item[mappedName] !== undefined &&
-                  mappedName !== keyName
-                ) {
-                  newItem[keyName] = item[mappedName];
-                  delete newItem[mappedName];
-                }
-              }
-            );
-=======
             ["href", "section", "title", "text"].forEach((keyName) => {
               const mappedName = indexFields[keyName];
               if (
@@ -1298,7 +1110,6 @@ function algoliaSearch(query, limit, algoliaOptions) {
                 delete newItem[mappedName];
               }
             });
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
             newItem.text = highlightMatch(query, newItem.text);
             return newItem;
           });
@@ -1324,10 +1135,6 @@ function fuseSearch(query, fuse, fuseOptions) {
       section: result.item.section,
       href: addParam(result.item.href, kQueryArg, query),
       text: highlightMatch(query, result.item.text),
-<<<<<<< HEAD
-      crumbs: result.item.crumbs,
-=======
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
     };
   });
 }

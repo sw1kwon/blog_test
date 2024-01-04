@@ -85,20 +85,6 @@ window.document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-<<<<<<< HEAD
-  function dashboardOffset() {
-    const dashboardNavEl = window.document.getElementById(
-      "quarto-dashboard-header"
-    );
-    if (dashboardNavEl !== null) {
-      return dashboardNavEl.clientHeight;
-    } else {
-      return 0;
-    }
-  }
-
-=======
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
   function updateDocumentOffsetWithoutAnimation() {
     updateDocumentOffset(false);
   }
@@ -106,11 +92,7 @@ window.document.addEventListener("DOMContentLoaded", function () {
   function updateDocumentOffset(animated) {
     // set body offset
     const topOffset = headerOffset();
-<<<<<<< HEAD
-    const bodyOffset = topOffset + footerOffset() + dashboardOffset();
-=======
     const bodyOffset = topOffset + footerOffset();
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
     const bodyEl = window.document.body;
     bodyEl.setAttribute("data-bs-offset", topOffset);
     bodyEl.style.paddingTop = topOffset + "px";
@@ -134,10 +116,6 @@ window.document.addEventListener("DOMContentLoaded", function () {
       } else {
         sidebar.style.top = topOffset + "px";
         sidebar.style.maxHeight = "calc(100vh - " + topOffset + "px)";
-<<<<<<< HEAD
-        sidebar.style.minHeight = "calc(100vh - " + topOffset + "px)";
-=======
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
       }
     });
 
@@ -227,15 +205,9 @@ window.document.addEventListener("DOMContentLoaded", function () {
   // Observe size changed for the header
   const headerEl = window.document.querySelector("header.fixed-top");
   if (headerEl && window.ResizeObserver) {
-<<<<<<< HEAD
-    const observer = new window.ResizeObserver(() => {
-      setTimeout(updateDocumentOffsetWithoutAnimation, 0);
-    });
-=======
     const observer = new window.ResizeObserver(
       updateDocumentOffsetWithoutAnimation
     );
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
     observer.observe(headerEl, {
       attributes: true,
       childList: true,
@@ -261,11 +233,7 @@ window.document.addEventListener("DOMContentLoaded", function () {
     // Fixup any sharing links that require urls
     // Append url to any sharing urls
     const sharingLinks = window.document.querySelectorAll(
-<<<<<<< HEAD
-      "a.sidebar-tools-main-item, a.quarto-navigation-tool, a.quarto-navbar-tools, a.quarto-navbar-tools-item"
-=======
       "a.sidebar-tools-main-item"
->>>>>>> 4be5013a6767f70f7fcc518faee95f5d04b61115
     );
     for (let i = 0; i < sharingLinks.length; i++) {
       const sharingLink = sharingLinks[i];
